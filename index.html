@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avaliação da mentoria</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Avalie a sua mentoria</h1>
+      <p>Chegou a hora de avaliar o seu mentor. Bora lá?</p>
+      <img
+        src="./images/ratings.svg"
+        alt="Balão de avaliação com 3 estrelas de 5"
+      />
+
+      <fieldset>
+        <legend>Informações pessoais</legend>
+      </fieldset>
+    </header>
+    <main>
+      <form action="">
+        <fieldset>
+          <section>
+            <div class="input-wrapper">
+              <label for="name">Nome</label>
+              <input type="text" id="name" placeholder="Digite seu nome" />
+            </div>
+
+            <div class="input-wrapper">
+              <label for="last-name">Sobrenome</label>
+              <input
+                type="text"
+                id="last-name"
+                placeholder="Digite seu sobrenome"
+              />
+            </div>
+          </section>
+
+          <div class="input-wrapper">
+            <label for="email"
+              >E-mail <span>(digite um e-mail válido)</span></label
+            >
+            <input
+              type="email"
+              id="email"
+              placeholder="Digite seu e-mail"
+              required
+            />
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend class="mentor-information">Informações do mentor</legend>
+
+          <section>
+            <div class="input-wrapper">
+              <label for="mentor">Selecione quem foi o seu mentor</label>
+              <select id="mentor">
+                <option value="">Escolha um mentor...</option>
+                <option value="">Fulano José da Silva</option>
+                <option value="">Ciclano João Santos</option>
+                <option value="">Beltrana Maria Costa</option>
+              </select>
+            </div>
+          </section>
+
+          <div class="input-wrapper">
+            <label for="name">Feedback sobre o mentor</label>
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Escreva um feeback para seu mentor"
+            ></textarea>
+          </div>
+
+          <div class="input-wrapper checkbox">
+            <input type="checkbox" id="checkbox" />
+            <label for="checkbox"
+              >Todas as minhas dúvidas foram esclarecidas durante a
+              mentoria.</label
+            >
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend class="scheduling-information">
+            Agendando próxima mentoria
+          </legend>
+
+          <section class="scheduling scheduling">
+            <div class="input-wrapper">
+              <label for="date">Data <span>(DD/MM/AAAA)</span></label>
+              <input type="date" id="date" />
+            </div>
+
+            <div class="input-wrapper time">
+              <label for="from-time">Das</label>
+              <input type="time" id="from-time" />
+            </div>
+
+            <div class="input-wrapper time">
+              <label for="to-time">Até</label>
+              <input type="time" id="to-time" />
+            </div>
+          </section>
+        </fieldset>
+
+        <div class="div-button">
+          <button>Salvar</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

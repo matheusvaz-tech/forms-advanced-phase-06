@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #bfd7e4;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  /* height: 29rem; */
+  color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header::before {
+  content: "";
+  height: 29rem;
+  width: 100%;
+  z-index: -1;
+  background: #293241;
+  position: absolute;
+}
+
+h1,
+h2,
+fieldset legend,
+button {
+  font-family: "Staatliches", fantasy;
+}
+
+header h1 {
+  font-size: 2.25rem;
+  margin-top: 6rem;
+  margin-bottom: 0.125rem;
+}
+
+header p {
+  margin-bottom: 1.5rem;
+  font-weight: normal;
+}
+
+header img {
+  margin-bottom: 2.5rem;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+form {
+  background: #fff;
+  width: 46.875rem;
+  padding: 2rem 4rem 4rem;
+  border-radius: 0 0 1.25rem 1.25rem;
+}
+
+fieldset {
+  border: none;
+}
+
+header fieldset legend {
+  background: #f67669;
+
+  width: 46.875rem;
+
+  height: 8.25rem;
+  /* padding: 3rem 0; */
+
+  border-radius: 1.25rem 1.25rem 0 0;
+
+  font-size: 1.5rem;
+  color: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-wrapper {
+  margin-top: 1rem;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+span {
+  font-size: 0.75rem;
+  color: #c1bccc;
+}
+
+span:hover {
+  color: #94929c;
+}
+
+section {
+  display: flex;
+  column-gap: 1.5rem;
+}
+
+section div input {
+  height: 3.5rem;
+  width: 18.688rem;
+}
+
+label {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  color: #4e4958;
+}
+
+input,
+select {
+  height: 3.5rem;
+
+  border-radius: 0.5rem;
+  border: 0.064rem solid #e6e6f0;
+  background: #fafafc;
+
+  padding: 0 1.5rem;
+
+  font-size: 1rem;
+  color: #4e4958;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-size: 1rem;
+  color: #c1bccc;
+}
+
+textarea {
+  border-radius: 0.5rem;
+  border: 0.064rem solid #e6e6f0;
+  background: #fafafc;
+
+  font-family: "Poppins", sans-serif;
+
+  padding: 1rem 1.5rem;
+
+  font-size: 1rem;
+  color: #4e4958;
+
+  resize: none;
+}
+
+select {
+  display: flex;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_1_54)'%3E%3Cpath d='M8 10L12 14L16 10' stroke='%239C98A6' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1_54'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: 96% 50%;
+}
+
+main fieldset legend {
+  font-size: 1.5rem;
+  color: #253b51;
+  line-height: 2rem;
+
+  margin: 0 auto;
+}
+
+.mentor-information,
+.scheduling-information {
+  padding-top: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  row-gap: 0.5rem;
+}
+
+.mentor-information::after,
+.scheduling-information::after {
+  content: "";
+  width: 38.875rem;
+  border: 0.032rem solid #e6e6f0;
+  margin-bottom: 2rem;
+}
+
+div.checkbox {
+  display: flex;
+  flex-direction: row;
+}
+
+label #checkbox::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_1_54)'%3E%3Cpath d='M8 10L12 14L16 10' stroke='%239C98A6' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1_54'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 0.5rem;
+  border: 0.064rem solid black;
+}
+
+#checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+section .scheduling {
+  display: flex;
+}
+
+div.time input {
+  width: 8.625rem;
+}
+
+.div-button {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  padding: 1rem 0;
+  font-size: 1.25rem;
+
+  background: #f67669;
+  color: #fff;
+
+  border: none;
+
+  border-radius: 0.5rem;
+  transition: 0.4s;
+}
+
+button:hover {
+  background: #e15d4f;
+  cursor: pointer;
+}
